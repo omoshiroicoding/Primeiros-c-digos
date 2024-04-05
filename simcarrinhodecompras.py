@@ -1,8 +1,10 @@
+# Declaração de variáveis que serão utilizadas
 carrinho = {}
 escolha = 0
 nomeproduto = str
 valorproduto = 0
 total = 0
+# Estrutura de repetição para manipular o carrinho
 while True:
     print('[1] Adicionar produto\n[2] Remover último produto\n[3] Revisar pedido'
           '\n[4] finalizar pedido')
@@ -25,6 +27,7 @@ while True:
         break
     if escolha < 1 and escolha >4:
         print('Opção inválida, tente novamente.')
+# Estrutura de repetição para evitar bugs ao selecionar forma de pagamento.
 while True:
     print('Como Deseja pagar?\n[1] Pagamento à vista ou cartão de débito(5% de desconto)\n'
       '[2] Em até 4x no cartão(sem juros)\n[3] Em 5x ou mais no cartão(10% de juros) ')
